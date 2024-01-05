@@ -220,6 +220,7 @@ post_install_steps() {
 		systemctl enable libvirtd.service; \
 		systemctl enable libvirtd.socket; \
 		systemctl enable NetworkManager.service; \
+		systemctl enable pcscd.service; \
 		systemctl enable sddm.service; \
 		systemctl enable smb.service; \
 		systemctl enable sshd.service; \
