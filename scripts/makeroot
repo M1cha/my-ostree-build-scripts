@@ -30,6 +30,7 @@ packages=(
 	android-tools
 	bash-completion
 	bc
+	broot
 	fd
 	git
 	htop
