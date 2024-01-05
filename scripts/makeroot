@@ -139,12 +139,6 @@ packages=(
 	# remote unlock
 	tinyssh
 
-	# retroarch
-	retroarch
-	retroarch-assets-ozone
-	retroarch-assets-xmb
-	libretro-core-info
-
 	# HSM
 	ccid
 	opensc
