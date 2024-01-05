@@ -111,6 +111,8 @@ packages=(
 	flatpak
 	meld
 	mpv
+	pcmanfm-qt
+	gvfs-mtp
 	swaylock
 	swayidle
 	waybar
