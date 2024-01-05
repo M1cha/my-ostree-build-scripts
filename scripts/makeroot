@@ -198,6 +198,7 @@ post_install_steps() {
 	echo "PasswordAuthentication no" >> "$rootfs/etc/ssh/sshd_config"
 
 	cp "$PWD/files/modules-load.conf" "$rootfs/etc/modules-load.d/ostree.conf"
+	cp "$PWD/files/modprobe.conf" "$rootfs/etc/modprobe.d/ostree.conf"
 
 	# /usr/lib/sddm/sddm.conf.d would make more sense conceptionally, but
 	# for some reason sddm doesn't load configs from readonly mounts.
