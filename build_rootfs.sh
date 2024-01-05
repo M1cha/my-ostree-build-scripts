@@ -86,6 +86,7 @@ packages=(
 	kdeconnect
 	polkit-kde-agent
 	qt5-wayland
+	qt6-wayland
 	sddm
 	slurp
 	xdg-desktop-portal
