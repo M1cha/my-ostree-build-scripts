@@ -140,12 +140,17 @@ packages=(
 	retroarch-assets-ozone
 	retroarch-assets-xmb
 	libretro-core-info
+
+	# HSM
+	ccid
+	opensc
+	pcsc-tools
 )
 patched_packages=(
 )
 aur_packages=(
 	mkinitcpio-systemd-extras
-	xwaylandvideobridge-cursor-mode-2-git
+	xwaylandvideobridge-git
 )
 
 rootfs="$ARCH_ROOTFS"
