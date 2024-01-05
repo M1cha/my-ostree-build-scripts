@@ -47,6 +47,18 @@ packages=(
 	podman
 	toolbox
 
+	# VMs
+	dmidecode
+	dnsmasq
+	edk2-ovmf
+	gettext
+	iptables-nft
+	libvirt
+	openbsd-netcat
+	qemu-full
+	virt-manager
+	virt-viewer
+
 	# QEMU
 	qemu-user-static
 	qemu-user-static-binfmt
@@ -199,6 +211,8 @@ post_install_steps() {
 		locale-gen; \
 		systemctl enable apparmor.service; \
 		systemctl enable bluetooth.service; \
+		systemctl enable libvirtd.service; \
+		systemctl enable libvirtd.socket; \
 		systemctl enable NetworkManager.service; \
 		systemctl enable sddm.service; \
 		systemctl enable smb.service; \
