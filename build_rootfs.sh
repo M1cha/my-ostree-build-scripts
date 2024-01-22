@@ -81,6 +81,7 @@ packages=(
 
 	# GUI: basics
 	dunst
+	ddcutil
 	grim
 	hyprland
 	kdeconnect
