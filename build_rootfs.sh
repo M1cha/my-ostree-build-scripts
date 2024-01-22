@@ -144,6 +144,8 @@ packages=(
 	ccid
 	opensc
 	pcsc-tools
+
+	fwupd
 )
 aur_packages=(
 	mkinitcpio-systemd-extras
@@ -193,6 +195,7 @@ post_install() {
 	locale-gen
 	systemctl enable apparmor.service
 	systemctl enable bluetooth.service
+	systemctl enable fwupd.service
 	systemctl enable libvirtd.service
 	systemctl enable libvirtd.socket
 	systemctl enable NetworkManager.service
