@@ -1,0 +1,500 @@
+   72  ./run2 build_rootfs_container
+   73  ./run2 commit_rootfs_container
+   74  dmesg
+   75  ./run2 commit_rootfs_container
+   76  mount
+   77  mount | grep overlay
+   78  ./run2 commit_rootfs_container
+   79  ./run2 build_pacstrap_container
+   80  ./run2 build_pacstrap_container
+   81  ./run2 build_pacstrap_container
+   82  ./run2 build_pacstrap_container
+   83  ./run2 build_pacstrap_container
+   84  ./run2 build_pacstrap_container
+   85  ./run2 build_pacstrap_container
+   86  ./run2 build_pacstrap_container
+   87  ./run2 build_pacstrap_container
+   88  ./run2 build_pacstrap_container
+   89  ./run2 build_pacstrap_container
+   90  ./run2 build_pacstrap_container
+   91  ./run2 build_pacstrap_container
+   92  ./run2 build_pacstrap_container
+   93  ./run2 build_pacstrap_container
+   94  ./run2 build_pacstrap_container
+   95  ./run2 build_pacstrap_container
+   96  ./run2 build_pacstrap_container
+   97  ./run2 build_pacstrap_container
+   98  ./run2 build_pacstrap_container
+   99  ./run2 build_pacstrap_container
+  100  ./run2 build_pacstrap_container
+  101  ./run2 build_pacstrap_container
+  102  ./run2 build_pacstrap_container
+  103  ./run2 build_pacstrap_container
+  104  ./run2 build_pacstrap_container
+  105  ./run2 build_pacstrap_container
+  106  ./run2 build_pacstrap_container
+  107  ./run2 build_pacstrap_container
+  108  ./run2 build_pacstrap_container
+  109  ./run2 build_pacstrap_container
+  110  ./run2 build_pacstrap_container
+  111  ./run2 build_pacstrap_container
+  112  ./run2 build_pacstrap_container
+  113  ./run2 build_pacstrap_container
+  114  ./run2 build_pacstrap_container
+  115  ./run2 build_pacstrap_container --xd
+  116  ./run2 build_pacstrap_container --xd
+  117  bash -x ./run2 build_pacstrap_container --xd
+  118  ./run2 commit_rootfs_container
+  119  ./run2 commit_rootfs_container
+  120  ./run2 commit_rootfs_container
+  121  ./run2 commit_rootfs_container
+  122  ./run2 commit_rootfs_container
+  123  ./run2 commit_rootfs_container
+  124  ./run2 commit_rootfs_container
+  125  ./run2 build_pacstrap_container
+  126  ./run2 commit_rootfs_container
+  127  ./run2 commit_rootfs_container
+  128  ./run2 commit_rootfs_container
+  129  rsync --help
+  130  ./run2 commit_rootfs_container
+  131  ./run2 commit_rootfs_container
+  132  ./run2 commit_rootfs_container
+  133  ./run2 commit_rootfs_rootfs
+  134  ./run2 commit_rootfs_directory
+  135  bash -x ./run2 build_rootfs_directory
+  136  bash -x ./run2 build_rootfs_directory
+  137  bash -x ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  138  rm -rf rootfs/
+  139  bash -x ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  140  rm -rf rootfs/
+  141  bash -x ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  142  ls -lah cache/
+  143  bash -x ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  144  bash -x ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  145  bash -x ./run2 --pacman-cache ./cache/ --podman-build-cache=yes build_rootfs_directory
+  146  bash -x ./run2 --pacman-cache ./cache/ --podman-build-cache=yes build_rootfs_directory
+  147  bash -x ./run2 --pacman-cache ./cache/ --podman-build-cache=yes build_rootfs_directory
+  148  bash -x ./run2 --pacman-cache ./cache/ --podman-build-cache=no build_rootfs_directory
+  149  bash -x ./run2 --pacman-cache ./cache/ --podman-build-cache=no build_rootfs_directory --help
+  150  ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  151  ./run2 --pacman-cache ./cache/ build_rootfs_directory
+  152  ./run2 --help
+  153  ./run2 build_pacstrap_container
+  154  ./run2 build_pacstrap_directory
+  155  ./run2 pacstrap_rootfs_directory
+  156  rm -r rootfs/
+  157  ./run2 pacstrap_rootfs_directory
+  158  ./run2 --pacman-cache-dir ./cache/ pacstrap_rootfs_directory
+  159  ./run2 --pacman-cache ./cache/ pacstrap_rootfs_directory
+  160  rm -r rootfs/
+  161  ./run2 --pacman-cache ./cache/ pacstrap_rootfs_directory
+  162  rm -r rootfs/
+  163  ./run2 --pacman-cache ./cache/ pacstrap_rootfs_directory
+  164  rm -r rootfs/
+  165  ./run2 --pacman-cache ./cache/ pacstrap_rootfs_directory
+  166  bash -x ./run2 --pacman-cache ./cache/ pacstrap_rootfs_directory
+  167  bash -x ./run2  pacstrap_rootfs_directory
+  168  bash -x ./run2  pacstrap_rootfs_directory
+  169  bash -x ./run2 --pacman-cache ./cache/ pacstrap_rootfs_directory
+  170  ./run2 --help
+  171  rm -r rootfs/
+  172  ./run2 pacstrap_rootfs_directory base
+  173  ./run2 enter_rootfs_directory
+  174  rm -r rootfs/
+  175  ./run2 enter_rootfs_directory base linux-zen btrfs-progs
+  176  ./run2 pacstrap_rootfs_directory base linux-zen btrfs-progs
+  177  ./run2 --help
+  178  ./run2 --help
+  179  ./run2 --help
+  180  ls -lah
+  181  rm archlinux-bootstrap-*
+  182  rm -r cache/
+  183  rm out.log 
+  184  mv parse_opts ../
+  185  mv run ../
+  186  mv run2 run
+  187  ls -lah
+  188  cat ostree-0-integration.conf 
+  189  virsh pool-list --all
+  190  virsh vol-list  Downloads
+  191  virsh list-bridge
+  192  virsh --help
+  193  virsh net-list
+  194  virsh iface-list
+  195  ip a
+  196  virsh net-start default
+  197  virsh console arch
+  198  virsh vol-list  Downloads
+  199  virsh list --all
+  200  virt-install --name arch --memory 2048 --vcpus=2,maxvcpus=4 --cpu host --cdrom /home/m1cha/Downloads/archlinux-2023.12.01-x86_64.iso --disk size=2,format=qcow2 --network network=default --virt-type kvm
+  201  virt-install --name arch --memory 2048 --vcpus=2,maxvcpus=4 --cpu host --cdrom /home/m1cha/Downloads/archlinux-2023.12.01-x86_64.iso --disk size=2,format=qcow2 --network network=default --virt-type kvm
+  202  virt-install --name arch --memory 2048 --vcpus=2,maxvcpus=4 --cpu host --cdrom /home/m1cha/Downloads/archlinux-2023.12.01-x86_64.iso --disk size=2,format=qcow2 --network network=default --virt-type kvm
+  203  virsh dom list
+  204  virsh list --all
+  205  virsh stop arch
+  206  virsh kill arch
+  207  cat /ostree/repo/config 
+  208  ls -lah /ostree/deploy/archlinux/
+  209  ls -lah /ostree/deploy/archlinux/deploy/9aeaba0428d2eaf14bb29e2aebffa8b8061e22cc20269712804e82c21d9fef4c.0/boot/
+  210  history
+  211  ls -lah
+  212  rm -rf rootfs/
+  213  ./run --pacman-cache cache build_rootfs_container
+  214  ./run --pacman-cache ./cache build_rootfs_container
+  215  ./run --pacman-cache cache build_rootfs_container
+  216  ./run --pacman-cache cache build_rootfs_container
+  217  ./run --pacman-cache cache build_rootfs_container
+  218  time ./run --pacman-cache cache build_rootfs_container
+  219  time ./run --pacman-cache cache commit_rootfs_container
+  220  time ./run --pacman-cache cache build_rootfs_container
+  221  time ./run --pacman-cache cache build_rootfs_container
+  222  time ./run --pacman-cache cache commit_rootfs_container
+  223  time ./run --pacman-cache cache build_rootfs_container
+  224  time ./run --pacman-cache cache build_rootfs_container
+  225  time ./run --pacman-cache cache build_rootfs_container
+  226  time ./run --pacman-cache cache commit_rootfs_container
+  227  time ./run --pacman-cache cache commit_rootfs_container -b test
+  228  time ./run --pacman-cache cache commit_rootfs_container -- -b test
+  229  time ./run --pacman-cache cache pacstrap_rootfs_directory base amd-ucode intel-ucode linux-zen btrfs-progs
+  230  time ./run --pacman-cache cache commit_rootfs_directory -- -b test
+  231  ./run enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  232  ./run enter_deployment /sysroot/ostree/deploy/fedora/deploy/8b2c029026c87d9d8af311f75e1f1f99672ff686d70ed5d7ad9c22fbe61d89e9.0
+  233  mount
+  234  mount -t tmpfs tmpfs /tmp/mnt
+  235  mkdir /tmp/mnt
+  236  mount -t tmpfs tmpfs /tmp/mnt
+  237  mkdir /tmp/overlay
+  238  mount -t tmpfs tmpfs /tmp/overlay
+  239  mkdir /tmp/overlay/work
+  240  mkdir /tmp/overlay/upper
+  241  mount -t overlay -o 'lowerdir=/sysroot,upperdir=/tmp/overlay/upper,workdir=/tmp/overlay/work' 
+  242  mount -t overlay -o 'lowerdir=/sysroot,upperdir=/tmp/overlay/upper,workdir=/tmp/overlay/work' overlay /mnt
+  243  ls -lah /mnt
+  244  ls -lah /mnt/
+  245  mkdir /mnt/checkout
+  246  ls -lah /tmp/overlay/upper/
+  247  ls -lah /tmp/overlay/upper/checkout/
+  248  ostree --help
+  249  ostree checkout --help
+  250  ostree checkout --repo /mnt/ostree/repo --user-mode --require-hardlinks test /mnt/checkout
+  251  rmdir /mnt/checkout/
+  252  ostree checkout --repo /mnt/ostree/repo --user-mode --require-hardlinks test /mnt/checkout
+  253  ostree checkout --repo /mnt/ostree/repo --require-hardlinks test /mnt/checkout
+  254  rmdir /mnt/checkout/
+  255  ostree checkout --repo /mnt/ostree/repo --require-hardlinks test /mnt/checkout
+  256  ostree checkout --repo /mnt/ostree/repo --require-hardlinks test /tmp/checkout
+  257  ls -lah /tmp/overlay/
+  258  ls -lah /tmp/overlay/upper/
+  259  ls -lah /tmp/overlay/upper/ostree/
+  260  ls -lah /tmp/overlay/upper/ostree/repo/
+  261  ls -lah /tmp/overlay/upper/ostree/repo/objects/
+  262  ls -lah /tmp/overlay/upper/checkout/
+  263  ./run enter_deployment /mnt/checkout/
+  264  history
+  265  chmod +x enter_ostree_ref 
+  266  cat /boot/loader/entries/ostree-3-fedora.conf 
+  267  ./run enter_deployment /sysroot/ostree/deploy/fedora/deploy/8b2c029026c87d9d8af311f75e1f1f99672ff686d70ed5d7ad9c22fbe61d89e9.0
+  268  ./run enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  269  ls -lah /
+  270  ls -lah /sysroot/
+  271  ls -lah /sysroot/home/
+  272  ls -lah /sysroot/home/roo
+  273  ls -lah /sysroot/root/
+  274  ls -lah /sysroot/var/
+  275  ls -lah /sysroot/ostree/
+  276  ./run enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  277  ./run enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  278  ./run enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  279  ./run --boot-dir /boot enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  280  ./run enter_deployment /sysroot/ostree/deploy/archlinux/deploy/ee4418489e24e95ae805a7cec56ff75a57ccdb54cbd58dffe33e0ff6e1f6bdb9.0
+  281  ostree
+  282  ostree checkout --help
+  283  ostree checkout test /sysroot/tmp-checkout
+  284  ls -lah /sysroot/tmp-checkout/
+  285  ./run --boot enter_deployment /sysroot/tmp-checkout
+  286  ./run --boot /boot enter_deployment /sysroot/tmp-checkout
+  287  rm -r /sysroot/tmp-checkout/
+  288  rm -rf /sysroot/tmp-checkout/
+  289  ostree checkout --help
+  290  ostree  --help
+  291  ostree admin  --help
+  292  dmesg
+  293  rm -rf /sysroot/tmp-checkout
+  294  ls -lahZ /sysroot/tmp-checkout/usr/etc/os-release 
+  295  ls -lahZ /sysroot/tmp-checkout/usr/lib/os-release 
+  296  lsattr /sysroot/tmp-checkout/usr/lib/os-release 
+  297  lsattr --help /sysroot/tmp-checkout/usr/lib/os-release 
+  298  lsattr -a /sysroot/tmp-checkout/usr/lib/os-release 
+  299  ls -lahZ /sysroot/tmp-checkout/usr/lib/os-release 
+  300  getfacl /sysroot/tmp-checkout/usr/lib/os-release 
+  301  getfacl /sysroot/tmp-checkout
+  302  getfacl /sysroot/tmp-checkout/var
+  303  ls -lahZ /sysroot/tmp-checkout/var
+  304  ls -lahZ /sysroot/tmp-checkout/
+  305  ls -lahZ /sysroot/
+  306  ls -lahZ /sysroot/tmp-checkout/
+  307  rm -rf /sysroot/tmp-checkout
+  308  rm -rf /sysroot/tmp-checkout/var
+  309  rmdir /sysroot/tmp-checkout/var
+  310  stat /sysroot/tmp-checkout/var
+  311  ls -lahZ /sysroot/tmp-checkout/var
+  312  ls -LahZ /sysroot/tmp-checkout/var
+  313  getfacl /sysroot/tmp-checkout/var
+  314  lsattr /sysroot/tmp-checkout/var
+  315  lsattr -a /sysroot/tmp-checkout/var
+  316  lsattr -a /sysroot/tmp-checkout
+  317  lsattr /sysroot/tmp-checkout/var
+  318  lsattr /sysroot/tmp-checkout
+  319  lsattr /sysroot/
+  320  lsattr /sysroot/tmp-checkout
+  321  ls -LahZ /sysroot/tmp-checkout/var
+  322  ls -LahZ /sysroot/tmp-checkout/
+  323  ls -lahZ /sysroot/tmp-checkout/
+  324  ls -lahZ /sysroot/
+  325  ls -lahZ /sysroot/tmp-checkout/
+  326  mount
+  327  ls -lahZ /sysroot/tmp-checkout/
+  328  ostree checkout -U test /sysroot/tmp-checkout2
+  329  ls -lah /sysroot/
+  330  ls -lah /sysroot/tmp-checkout2
+  331  rm -rf /sysroot/tmp-checkout2
+  332  ls -lah /
+  333  mount | grep sysroot
+  334  mount | grep sysroot
+  335  mount -o rw,remount /sysroot/
+  336  rm -rf /sysroot/tmp-checkout2
+  337  rm -rf /sysroot/tmp-checkout
+  338  mount -o ro,remount /sysroot/
+  339  mount -o ro,remount /sysroot/
+  340  mount | grep sysroot
+  341  mount -f -o ro,remount /sysroot/
+  342  mount | grep sysroot
+  343  podman unshare --help
+  344  man unshare
+  345  unshare -m bash
+  346  unshare -m bash
+  347  ./run --boot /boot enter_ostree_ref test
+  348  ./run --boot /boot enter_ostree_ref test
+  349  ./run --boot /boot enter_ostree_ref test
+  350  ls -lah /tmp/enter_ostree_work/
+  351  ostree admin deploy --help
+  352  ./run2 build_pacstrap_container
+  353  ./run build_pacstrap_container
+  354  ./run build_pacstrap_container
+  355  ./run build_pacstrap_container
+  356  ./run deploy --help
+  357  ./run deploy -- --help
+  358  ./run deploy 
+  359  ./run deploy 
+  360  ./run --sysroot-dir /sysroot/ deploy 
+  361  ln -s /sysroot/ostree /ostree
+  362  ls -lah /ostree
+  363  ls -lah /ostree/
+  364  rm /ostree/ostree
+  365  ./run --sysroot-dir /sysroot/ deploy 
+  366  ./run --sysroot-dir /sysroot --boot-dir /boot deploy 
+  367  ./run build_pacstrap_container
+  368  ./run --sysroot-dir /sysroot --boot-dir /boot deploy 
+  369  history
+  370  rmmod iwlwifi
+  371  modprobe iwlwifi
+  372  ip a
+  373  ./run build_pacstrap_container
+  374  ./run_rootfs build_rootfs.sh
+  375  mkdir ../ostree-main
+  376  mv build_rootfs-main.sh ../ostree-main/build_rootfs.sh
+  377  cp -r ../archlinux-ostree/files/* ../ostree-main/
+  378  ls -lah ../ostree-main/
+  379  cd ../
+  380  cd ostree-main/
+  381  ls -lah
+  382  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  383  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  384  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  385  date
+  386  systemctl status systemd-timesyncd
+  387  timedatectl 
+  388  systemctl status systemd-timesyncd
+  389  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  390  podman run --rm -it archlinux-pacstrap
+  391  podman run --rm -it --entrypoint /bin/bash archlinux-pacstrap
+  392  ../ostree-builder/run_rootfs ../ostree-builder/build_rootfs.sh 
+  393  podman run --rm -it --entrypoint /bin/bash archlinux-pacstrap
+  394  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  395  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  396  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  397  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  398  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  399  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  400  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  401  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  402  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  403  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  404  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  405  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  406  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  407  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  408  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  409  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  410  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  411  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  412  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  413  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  414  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  415  ../ostree-builder/run_rootfs ../ostree-builder/build_rootfs.sh 
+  416  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  417  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  418  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  419  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  420  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  421  df -h
+  422  rm -rf ../ostree-builder/rootfs/
+  423  rm -rf ../ostree-builder/cache/
+  424  df -h
+  425  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  426  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  427  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  428  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  429  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  430  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  431  df -h
+  432  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  433  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  434  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  435  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  436  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  437  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  438  touch build_aur_packages
+  439  chmod +x build_aur_packages
+  440  mv build_aur_packages ../ostree-builder/
+  441  chown m1cha:m1cha ../ostree-builder/build_aur_packages 
+  442  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  443  bash -x ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  444  bash -x ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  445  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  446  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  447  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  448  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  449  ./run build_pacstrap_container
+  450  ../ostree-builder/run build_pacstrap_container
+  451  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  452  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  453  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  454  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  455  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  456  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  457  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  458  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  459  ls -lah aur_packages/
+  460  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  461  ls -lah aur_packages/
+  462  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  463  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  464  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  465  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  466  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  467  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  468  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  469  cat rootfs/etc/pacman.conf 
+  470  chmod +x ../ostree-builder/build_rootfs_post_install 
+  471  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  472  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  473  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  474  rm -rf rootfs/
+  475  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  476  df -h
+  477  rm -rf rootfs/
+  478  podman system prune
+  479  ../ostree-builder/run_rootfs ./build_rootfs.sh 
+  480  echo $?
+  481  time ./run --pacman-cache cache commit_rootfs_directory -- -b test
+  482  /home/m1cha/nbu/ostree-builder/run --pacman-cache cache commit_rootfs_directory -- -b test
+  483  /home/m1cha/nbu/ostree-builder/run --pacman-cache cache commit_rootfs_directory -- -b test
+  484  ostree
+  485  ostree ls test
+  486  ls -lah 
+  487  git init
+  488  nano .gitignore
+  489  rm -rf .git
+  490  rm -rf rootfs/ cache/ aur_packages/
+  491  chown -R m1cha:m1cha .
+  492  cat .git/config 
+  493  cd ../
+  494  cp ../ostree-builder/Containerfile.base .
+  495  git diff
+  496  git status
+  497  rm Containerfile.base 
+  498  ls -lah /boot/
+  499  ls -lah /boot/grub2/
+  500  ls -lah /boot/loader/grub.cfg 
+  501  export PATH="$PATH:/var/home/m1cha/nbu/archlinux-ostree"
+  502  arch-ostree 
+  503  arch-ostree --help
+  504  df -h
+  505  arch-ostree build_builder_container
+  506  arch-ostree --aur-dir aur_packages --pacman-cache cache --rootfs-dir rootfs build_rootfs_directory build_rootfs.sh 
+  507  ls -lah
+  508  arch-ostree --aur-dir aur_packages --pacman-cache cache --rootfs-dir rootfs build_rootfs_directory build_rootfs.sh 
+  509  arch-ostree --rootfs-dir rootfs commit_rootfs_directory -- -v -b archlinux/latest
+  510  ostree checkout --require-hardlinks archlinux/latest deployment
+  511  cat /proc/self/mountinfo 
+  512  cat /proc/self/mountinfo |less
+  513  stat -F .
+  514  man stat
+  515  stat -f .
+  516  stat -f /sysroot
+  517  ostree checkout archlinux/latest deployment
+  518  rmdir deployment/
+  519  ostree checkout archlinux/latest deployment
+  520  arch-ostree --deploy-env-dir deployment --sysroot-dir / deploy_env -- bash
+  521  mount
+  522  /dev/mapper/luks-dd8523ea-8e21-440a-94c6-f4e90b4dc8cb /mnt
+  523  mount /dev/mapper/luks-dd8523ea-8e21-440a-94c6-f4e90b4dc8cb /mnt
+  524  ls -lah /mnt
+  525  ls -lah /mnt/
+  526  umount /mnt
+  527  mount -o subvol=/root /dev/mapper/luks-dd8523ea-8e21-440a-94c6-f4e90b4dc8cb /mnt
+  528  ls -lah /mnt/
+  529  ls -lah /mnt/boot/
+  530  mount /dev/nvme0n1p2 /mnt/boot
+  531  mkdir /mnt/efi
+  532  mount /dev/nvme0n1p1 /mnt/efi
+  533  moutn
+  534  mount
+  535  ls -lah /mnt/boot
+  536  ls -lah /mnt/efi
+  537  findmnt --real
+  538  ls -lah /mnt/
+  539  ls -lah /mnt/home/
+  540  mount -o subvol=/home /dev/mapper/luks-dd8523ea-8e21-440a-94c6-f4e90b4dc8cb /mnt/homoe
+  541  mount -o subvol=/home /dev/mapper/luks-dd8523ea-8e21-440a-94c6-f4e90b4dc8cb /mnt/home
+  542  ls -lah /mnt/home/
+  543  ls -lah /mnt/home/m1cha/
+  544  cat /etc/fstab 
+  545  genfstab -U /mnt
+  546  arch-ostree --deploy-env-dir deployment --sysroot-dir / deploy_env -- bash
+  547  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  548  arch-ostree --aur-dir aur_packages --pacman-cache cache --rootfs-dir rootfs build_rootfs_directory build_rootfs.sh 
+  549  arch-ostree --rootfs-dir rootfs commit_rootfs_directory -- -v -b archlinux/latest
+  550  rm -r deployment/
+  551  ostree checkout archlinux/latest deployment
+  552  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  553  bash -x "$(which arch-ostree)" --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  554  bash -x /var/home/m1cha/nbu/archlinux-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  555  bash -x /var/home/m1cha/nbu/archlinux-ostree/arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  556  SHELLOPTS=xtrace arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  557  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  558  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  559  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  560  ls -lah /var/mnt/
+  561  ls -lah /var/mnt/home/
+  562  ls -lah deployment/home 
+  563  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  564  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  565  rm -rf /mnt/boot/efi/
+  566  umount /boot/efi 
+  567  rm -rf /mnt/boot/efi/
+  568  arch-ostree --deploy-env-dir deployment --sysroot-dir /mnt deploy_env -- bash
+  569  nvim /ostree/deploy/archlinux/deploy/6b064ef445b3d13f43a54704e84a5d3d04c38abaaee477cd984ce79f5da77540.0/etc/fstab 
+  570  history
+  571  history > history

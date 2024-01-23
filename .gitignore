@@ -1,4 +1,4 @@
 /aur_packages
 /cache
 /deployment
-/rootfs
+/rootfs*
