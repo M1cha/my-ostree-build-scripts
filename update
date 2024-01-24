@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -euo pipefail
+
+scriptdir="$(dirname "$(readlink -f "$0")")"
+
+cd "$scriptdir"
+
+export PATH="$scriptdir/archlinux-ostree:$PATH"
+
+arch-ostree \
+	--aur-dir aur_packages \
+	--pacman-cache cache \
+	--rootfs-dir rootfs \
+	build_rootfs_directory \
+	build_rootfs.sh
+
+arch-ostree \
+	--rootfs-dir rootfs \
+	commit_rootfs_directory \
+	-- \
+	-v \
+	-b archlinux/latest
+
+ostree admin deploy archlinux/latest
