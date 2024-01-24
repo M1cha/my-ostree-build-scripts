@@ -1,0 +1,4 @@
+[submodule "archlinux-ostree"]
+	path = archlinux-ostree
+	url = https://github.com/M1cha/archlinux-ostree
+	branch = main
