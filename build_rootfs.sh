@@ -85,6 +85,7 @@ packages=(
 	grim
 	hyprland
 	kdeconnect
+	keyd
 	polkit-kde-agent
 	qt5-wayland
 	qt6-wayland
