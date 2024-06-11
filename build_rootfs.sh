@@ -94,6 +94,7 @@ packages=(
 	xdg-desktop-portal-gtk
 	xdg-desktop-portal-hyprland
 	xorg-xwayland
+	xwaylandvideobridge
 
 	# GUI: fonts
 	ttf-dejavu
@@ -149,7 +150,6 @@ packages=(
 )
 aur_packages=(
 	mkinitcpio-systemd-extras
-	xwaylandvideobridge-git
 )
 
 prepare() {
